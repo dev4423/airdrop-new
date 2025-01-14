@@ -4019,3 +4019,7 @@ httpx.RemoteProtocolError: Server disconnected without sending a response.
 2025-01-14 21:39:35,017 - INFO - Single agent run completed successfully.
 2025-01-14 21:39:35,018 - INFO - 127.0.0.1 - - [14/Jan/2025 21:39:35] "GET /run_agents HTTP/1.1" 200 -
 2025-01-14 22:18:32,753 - INFO -  * Detected change in 'D:\\Client Projects\\airdrop_new\\air_drops_agent.py', reloading
+2025-01-14 22:18:37,362 - INFO -  * Restarting with stat
+2025-01-14 22:18:47,610 - INFO - Starting Flask app.
+2025-01-14 22:18:47,645 - WARNING -  * Debugger is active!
+2025-01-14 22:18:47,661 - INFO -  * Debugger PIN: 130-873-449
