@@ -1,7 +1,7 @@
 from phi.agent import Agent
 from phi.model.google import Gemini
 from phi.tools.duckduckgo import DuckDuckGo
-from phi.tools.newspaper4k import Newspaper4k
+
 import os
 from dotenv import load_dotenv
 
@@ -24,7 +24,7 @@ airdrop_discovery_agent = Agent(
     name="Airdrop Discovery Agent",
     role="Discover ongoing cryptocurrency airdrops",
     model=Gemini(id="gemini-2.0-flash-exp"),
-    tools=[DuckDuckGo(), Newspaper4k()],
+    tools=[DuckDuckGo()],
     instructions=[
         "Search for ongoing cryptocurrency airdrops using DuckDuckGo and Newspaper4k.",
         "Focus on sources discussing Ethereum, Polygon, Solana, and other popular blockchain ecosystems.",
@@ -39,7 +39,7 @@ legitimacy_agent = Agent(
     name="Legitimacy Assessment Agent",
     role="Evaluate the legitimacy of cryptocurrency airdrops",
     model=Gemini(id="gemini-2.0-flash-exp"),
-    tools=[DuckDuckGo(), Newspaper4k()],
+    tools=[DuckDuckGo()],
     instructions=[
         "Analyze the legitimacy of cryptocurrency airdrops identified by the Discovery Agent.",
         "Provide a risk score (1-10) and a detailed evaluation for each airdrop.",
